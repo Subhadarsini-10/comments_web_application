@@ -4,11 +4,46 @@
   margin: auto;
   background-color: rgb(244, 247, 247);
 }
+.search-bar-container{
+  align-items: center;
+  display: flex;
+  gap: 100;
+}
+.search-input{
+  width: 100%;
+}
+.home-button{
+  cursor: pointer;
+}
 
 .comments-title {
   font-size: 30px;
   margin-bottom: 20px;
 }
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #007bff; /* Loader color */
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.no-results-message {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 .comments-container {
   margin-top: 40px;
